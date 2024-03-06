@@ -28,15 +28,36 @@ class Acuatico extends Habitat {
         super(nombre);
     }
 
-    // Puedes agregar métodos específicos para hábitats acuáticos si es necesario
-}
+    public void medirProfundidad(double profundidad) {
+        registrarCondicion("Profundidad del agua", profundidad);
+    }
 
+    public void verificarCalidadAgua(String calidad) {
+        registrarCondicion("Calidad del agua", calidad);
+    }
+
+    @Override
+    public void analizarCondiciones() {
+        super.analizarCondiciones();
+    }
+}
 class Terrestre extends Habitat {
     public Terrestre(String nombre) {
         super(nombre);
     }
 
-    // Puedes agregar métodos específicos para hábitats terrestres si es necesario
+    public void medirTemperaturaSuelo(double temperatura) {
+        registrarCondicion("Temperatura del suelo", temperatura);
+    }
+
+    public void verificarHumedad(double humedad) {
+        registrarCondicion("Humedad del suelo", humedad);
+    }
+
+    @Override
+    public void analizarCondiciones() {
+        super.analizarCondiciones();
+    }
 }
 
 class Aviario extends Habitat {
@@ -44,24 +65,39 @@ class Aviario extends Habitat {
         super(nombre);
     }
 
-    // Puedes agregar métodos específicos para aviarios si es necesario
+    public void verificarCalidadAire(String calidad) {
+        registrarCondicion("Calidad del aire", calidad);
+    }
+
+    public void verificarIluminacion(String iluminacion) {
+        registrarCondicion("Iluminación adecuada", iluminacion);
+    }
+
+    @Override
+    public void analizarCondiciones() {
+        super.analizarCondiciones();
+    }
 }
 
 public class GestionHabitats {
     public static void main(String[] args) {
         // Ejemplo de uso
         Acuatico acuario = new Acuatico("Acuario Principal");
+        acuario.medirProfundidad(10.5);
+        acuario.verificarCalidadAgua("Buena");
         acuario.registrarCondicion("Temperatura del agua", 25);
         acuario.registrarCondicion("Niveles de oxígeno", 8);
 
         Terrestre jungla = new Terrestre("Jungla Tropical");
-        jungla.registrarCondicion("Temperatura del suelo", 28);
-        jungla.registrarCondicion("Humedad", 80);
+        jungla.medirTemperaturaSuelo(28);
+        jungla.verificarHumedad(80);
+        jungla.registrarCondicion("Calidad del suelo", "Buena");
 
-        Aviario aviario = new Aviario("Gran Aviario");
+        Aviario aviario = new Aviario("Aviario");
+        aviario.verificarCalidadAire("Buena");
+        aviario.verificarIluminacion("Buena");
         aviario.registrarCondicion("Temperatura del aire", 22);
         aviario.registrarCondicion("Humedad del aire", 65);
-        aviario.registrarCondicion("Limpieza del aire", "Buena");
 
         // Analizar condiciones de los hábitats
         acuario.analizarCondiciones();
