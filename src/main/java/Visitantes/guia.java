@@ -1,6 +1,6 @@
 package Visitantes;
 
-public abstract class Guia {
+public abstract class guia {
     public abstract void ofrecerGuia();
 }
 
