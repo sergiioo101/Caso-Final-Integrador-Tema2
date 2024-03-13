@@ -105,8 +105,8 @@ public class Main {
                     case 1:
                         Recurso recursoSeguridad = new Recurso("Recurso 2", 200);
                         guia_reptiles guiaSeguridad = new guia_reptiles();
-                        Seguimiento seguimiento = new Seguimiento("Seguimiento 1", 40, recursoSeguridad, guiaSeguridad);
-                        Vigilar vigilar = new Vigilar("Vigilar 1", 50, recursoSeguridad);
+                        Seguimiento seguimiento = new Seguimiento("Juan", 40, recursoSeguridad, guiaSeguridad);
+                        Vigilar vigilar = new Vigilar("Sebas", 50, recursoSeguridad);
                         seguimiento.hacerSeguimiento();
                         vigilar.vigilarHabitat();
                         break;
