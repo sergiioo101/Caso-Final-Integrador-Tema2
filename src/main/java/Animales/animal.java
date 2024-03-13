@@ -11,8 +11,8 @@ public class animal {
     String alimentacion;
     String reproduccion;
     String vacunas;
-    boolean salud;
-    boolean comportamiento;
+    String salud;
+    String comportamiento;
 
 
     public animal(String nombre, String especie, String sexo, String edad, String peso,String alimentacion, String reproduccion,String vacunas, boolean salud, boolean comportamiento) {
@@ -24,14 +24,8 @@ public class animal {
         this.alimentacion = alimentacion;
         this.reproduccion = reproduccion;
         this.vacunas = vacunas;
-        this.salud = salud;
-        this.comportamiento = comportamiento;
-    }
-
-    public animal(String param1, String param2, String param3, String param4, String param5, String param6, String param7, String param8, String param9, String param10, String param11, String param12, String param13, String param14, String param15, String param16, String param17, String param18) {
-    }
-
-    public animal(String cocodrilo, String reptil, String carnívoro, String aguaSalada, String tropical, String verde, String grande) {
+        this.salud = String.valueOf(salud);
+        this.comportamiento = String.valueOf(comportamiento);
     }
 
     @Override
@@ -140,20 +134,20 @@ public class animal {
         this.vacunas = vacunas;
     }
     
-    public boolean isSalud() {
+    public String isSalud() {
         return salud;
     }
 
     public void setSalud(boolean salud) {
-        this.salud = salud;
+        this.salud = String.valueOf(salud);
     }
 
-    public boolean isComportamiento() {
+    public String isComportamiento() {
         return comportamiento;
     }
 
     public void setComportamiento(boolean comportamiento) {
-        this.comportamiento = comportamiento;
+        this.comportamiento = String.valueOf(comportamiento);
     }
 
     public boolean buenasalud(boolean salud) {

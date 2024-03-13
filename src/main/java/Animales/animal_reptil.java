@@ -6,9 +6,9 @@ public class animal_reptil extends animal {
     boolean venenoso;
     String tipoReptil;
 
-    public animal_reptil(String nombre, String especie, String raza, String color, String sexo, String edad,
-                         String peso, String altura, String tipo, String habitat, String alimentacion, String reproduccion,
-                         String cuidados, String enfermedades, String vacunas, String id, String salud, boolean comportamiento,
+    public animal_reptil(String nombre, String especie, String sexo, String edad,
+                         String peso, String tipo, String alimentacion, String reproduccion,
+                         String vacunas, String salud, boolean comportamiento,
                          boolean escamas, boolean cola, boolean venenoso, String tipoReptil) {
         super(nombre, especie, raza, color, sexo, edad, peso, altura, tipo, habitat, alimentacion, reproduccion, cuidados,
                 enfermedades, vacunas, id, salud, String.valueOf(comportamiento));
@@ -16,10 +16,6 @@ public class animal_reptil extends animal {
         this.cola = cola;
         this.venenoso = venenoso;
         this.tipoReptil = tipoReptil;
-    }
-
-    public animal_reptil(String cocodrilo, String reptil, String carnívoro, String aguaSalada, String tropical, String verde, String grande, int i, boolean b, boolean b1, String cocodrilo1) {
-        super();
     }
 
     public boolean tieneEscamas() {
