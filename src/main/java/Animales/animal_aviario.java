@@ -7,12 +7,9 @@ public class animal_aviario extends animal {
     boolean plumaje;
     String tipo_aviario;
 
-    public animal_aviario(String nombre, String especie, String raza, String color, String sexo, String edad,
-                          String peso, String altura, String tipo, String habitat, String alimentacion, String reproduccion,
-                          String cuidados, String enfermedades, String vacunas, String id, String salud, boolean comportamiento, boolean vuela, boolean pico,
-                          boolean plumaje, String tipo_aviario) {
-        super(nombre, especie, raza, color, sexo, edad, peso, altura, tipo, habitat, alimentacion, reproduccion, cuidados,
-                enfermedades, vacunas, id, salud, String.valueOf(comportamiento));
+    public animal_aviario(String nombre, String especie, String sexo, String edad, String alimentacion, String reproduccion,
+                          boolean salud, boolean comportamiento,boolean vuela, boolean pico, boolean plumaje, String tipo_aviario) {
+        super(nombre, especie,sexo, edad, alimentacion, reproduccion, salud, comportamiento);
         this.vuela = vuela;
         this.pico = pico;
         this.plumaje = plumaje;
