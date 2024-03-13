@@ -15,7 +15,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         // Crear animales
-        animal_reptil cocodrilo = new animal_reptil("Sebas", "Cocodrilo", "Masculino", "12", "Carnivora", Oviparo, 2);
+        animal_reptil cocodrilo = new animal_reptil("Cocodrilo", "Carnívoro", "Reptil", "Cocodrilo del Nilo", "Verde", "Oviparo",);
 
 
         // Importar hábitats ya creados
@@ -26,8 +26,8 @@ public class Main {
 
         // Agregar animales a los hábitats correspondientes
         habitat1.agregarAnimal(cocodrilo);
-        habitat2.agregarAnimal(aguila);
-        habitat3.agregarAnimal(tiburon);
+        //habitat2.agregarAnimal(aguila);
+        //habitat3.agregarAnimal(tiburon);
 
         System.out.println("¡Bienvenido al Zoológico!");
         System.out.println("Por favor, elija su rol:");

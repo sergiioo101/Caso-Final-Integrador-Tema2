@@ -8,18 +8,18 @@ public class animal {
     String sexo;
     String edad;
     String alimentacion;
-    String vacunas;
+    String reproduccion;
     String salud;
     String comportamiento;
 
 
-    public animal(String nombre, String especie, String sexo, String edad, String alimentacion, String vacunas, String s, boolean salud, boolean comportamiento) {
+    public animal(String nombre, String especie, String sexo, String edad, String alimentacion,String reproduccion, boolean salud, boolean comportamiento) {
         this.nombre = nombre;
         this.especie = especie;
         this.sexo = sexo;
         this.edad = edad;
         this.alimentacion = alimentacion;
-        this.vacunas = vacunas;
+        this.reproduccion = reproduccion;
         this.salud = String.valueOf(salud);
         this.comportamiento = String.valueOf(comportamiento);
     }
@@ -101,15 +101,6 @@ public class animal {
         this.alimentacion = alimentacion;
     }
 
-    public String getVacunas() {
-        return vacunas;
-    }
-
-
-    public void setVacunas(String vacunas) {
-        this.vacunas = vacunas;
-    }
-    
     public String isSalud() {
         return salud;
     }
@@ -146,46 +137,9 @@ public class animal {
     public void registrarAlimentacion(String alimento) {
         System.out.println("El animal " + nombre + " ha sido alimentado con " + alimento);
     }
-
-    //metodo para registrar la reproducción
-    public void registrarReproduccion(String pareja) {
-        System.out.println("El animal " + nombre + " ha tenido una relación con " + pareja);
-    }
-    //metodo para registrar los cuidados
-    public void registrarCuidados(String cuidado) {
-        System.out.println("El animal " + nombre + " ha sido cuidado con " + cuidado);
-    }
-    //metodo para registrar las enfermedades
-    public void registrarEnfermedades(String enfermedad) {
-        System.out.println("El animal " + nombre + " ha sido diagnosticado con " + enfermedad);
-    }
-    //metodo para registrar las vacunas
-    public void registrarVacunas(String vacuna) {
-        System.out.println("El animal " + nombre + " ha sido vacunado con " + vacuna);
-    }
-    //metodo para registrar el habitat
-    public void registrarHabitat(String habitat) {
-        System.out.println("El animal " + nombre + " ha sido trasladado a " + habitat);
-    }
-    //metodo para registrar el peso
-    public void registrarPeso(String peso) {
-        System.out.println("El animal " + nombre + " ha sido pesado y su peso es " + peso);
-    }
-    //metodo para registrar la altura
-    public void registrarAltura(String altura) {
-        System.out.println("El animal " + nombre + " ha sido medido y su altura es " + altura);
-    }
     //metodo para registrar la edad
     public void registrarEdad(String edad) {
         System.out.println("El animal " + nombre + " ha sido medido y su edad es " + edad);
-    }
-    //metodo para registrar el color
-    public void registrarColor(String color) {
-        System.out.println("El animal " + nombre + " ha sido medido y su color es " + color);
-    }
-    //metodo para registrar la raza
-    public void registrarRaza(String raza) {
-        System.out.println("El animal " + nombre + " ha sido medido y su raza es " + raza);
     }
     //metodo para registrar la especie
     public void registrarEspecie(String especie) {
@@ -199,19 +153,6 @@ public class animal {
     public void registrarSexo(String sexo) {
         System.out.println("El animal " + nombre + " ha sido medido y su sexo es " + sexo);
     }
-    //metodo para registrar el tipo
-    public void registrarTipo(String tipo) {
-        System.out.println("El animal " + nombre + " ha sido medido y su tipo es " + tipo);
-    }
-    //metodo para registrar el id
-    public void registrarId(int id) {
-        System.out.println("El animal " + nombre + " ha sido medido y su id es " + id);
-    }
-    // metodo para registrar la salud
-    public void registrarSalud(boolean salud) {
-        System.out.println(buenasalud(salud));
-    }
-
     // metodo para registrar el comportamiento
     public void registrarComportamiento(boolean comportamiento) {
         System.out.println(buencomportamiento(comportamiento));
