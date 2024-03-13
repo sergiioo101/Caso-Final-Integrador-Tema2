@@ -34,15 +34,22 @@ public class Main {
         habitat1.agregarAnimal(cocodrilo);
         habitat1.agregarAnimal(iguana);
         habitat1.agregarAnimal(serpiente);
+        System.out.println(habitat1.toString());
+
         habitat2.agregarAnimal(halcon);
         habitat2.agregarAnimal(aguila);
         habitat2.agregarAnimal(loro);
+        System.out.println(habitat2.toString());
+
         habitat3.agregarAnimal(tiburon);
         habitat3.agregarAnimal(delfin);
         habitat3.agregarAnimal(pez);
+        System.out.println(habitat3.toString());
+
         habitat4.agregarAnimal(vaca);
         habitat4.agregarAnimal(cerdo);
         habitat4.agregarAnimal(tortuga);
+        System.out.println(habitat4.toString());
 
         System.out.println("¡Bienvenido al Zoológico!");
         System.out.println("Por favor, elija su rol:");
