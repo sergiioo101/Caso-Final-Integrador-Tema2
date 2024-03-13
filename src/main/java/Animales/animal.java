@@ -1,8 +1,6 @@
 package Animales;
 
 public class animal {
-
-
     String nombre;
     String especie;
     String sexo;
@@ -12,22 +10,21 @@ public class animal {
     Boolean salud;
     Boolean comportamiento;
 
-
-    public animal(String nombre, String especie, String sexo, String edad, String alimentacion,String reproduccion, boolean salud, boolean comportamiento) {
+    public animal(String nombre, String especie, String sexo, String edad, String alimentacion, String reproduccion, boolean salud, boolean comportamiento) {
         this.nombre = nombre;
         this.especie = especie;
         this.sexo = sexo;
         this.edad = edad;
         this.alimentacion = alimentacion;
         this.reproduccion = reproduccion;
-        this.salud = Boolean.valueOf(String.valueOf(salud));
-        this.comportamiento = Boolean.valueOf(String.valueOf(comportamiento));
+        this.salud = salud;
+        this.comportamiento = comportamiento;
     }
 
     @Override
-        public String toString() {
-            return "Nombre: " + this.nombre + ", Especie: " + this.especie + ", Sexo: " + this.sexo + ", Edad: " + this.edad + ", Alimentacion: " + this.alimentacion + ", Reproduccion: " + this.reproduccion + ", Salud: " + this.salud + ", Comportamiento: " + this.comportamiento;
-        }
+    public String toString() {
+        return "Nombre: " + this.nombre + ", Especie: " + this.especie + ", Sexo: " + this.sexo + ", Edad: " + this.edad + ", Alimentacion: " + this.alimentacion + ", Reproduccion: " + this.reproduccion + ", Salud: " + (this.salud ? "Buena" : "Mala") + ", Comportamiento: " + (this.comportamiento ? "Bueno" : "Malo");
+    }
 
     @Override
     protected Object clone() throws CloneNotSupportedException {
@@ -72,7 +69,7 @@ public class animal {
     public void setEspecie(String especie) {
         this.especie = especie;
     }
-    
+
     public String getSexo() {
         return sexo;
     }
@@ -131,30 +128,5 @@ public class animal {
         else
             System.out.println("El animal " + nombre + " se encuentra en mal estado de comportamiento");
         return comportamiento;
-    }
-
-    //metodo para registrar la alimentación
-    public void registrarAlimentacion(String alimento) {
-        System.out.println("El animal " + nombre + " ha sido alimentado con " + alimento);
-    }
-    //metodo para registrar la edad
-    public void registrarEdad(String edad) {
-        System.out.println("El animal " + nombre + " ha sido medido y su edad es " + edad);
-    }
-    //metodo para registrar la especie
-    public void registrarEspecie(String especie) {
-        System.out.println("El animal " + nombre + " ha sido medido y su especie es " + especie);
-    }
-    //metodo para registrar el nombre
-    public void registrarNombre(String nombre) {
-        System.out.println("El animal " + nombre + " ha sido medido y su nombre es " + nombre);
-    }
-    //metodo para registrar el sexo
-    public void registrarSexo(String sexo) {
-        System.out.println("El animal " + nombre + " ha sido medido y su sexo es " + sexo);
-    }
-    // metodo para registrar el comportamiento
-    public void registrarComportamiento(boolean comportamiento) {
-        System.out.println(buencomportamiento(comportamiento));
     }
 }
