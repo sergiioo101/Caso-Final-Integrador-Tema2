@@ -1,8 +1,6 @@
 import java.util.Scanner;
 import Administracion_recursos.Recurso;
-import Visitantes.guia;
-import Visitantes.guia_reptiles;
-import Visitantes.guia_aves;
+import Visitantes.*;
 import Mantenimiento_seguridad.Seguimiento;
 import Mantenimiento_seguridad.Vigilar;
 
@@ -35,6 +33,14 @@ public class Main {
                         break;
                     case 2:
                         guiaVisitante = new guia_aves();
+                        guiaVisitante.ofrecerGuia();
+                        break;
+                    case 3:
+                        guiaVisitante = new guia_acuaticos();
+                        guiaVisitante.ofrecerGuia();
+                        break;
+                    case 4:
+                        guiaVisitante = new granja();
                         guiaVisitante.ofrecerGuia();
                         break;
                     default:
