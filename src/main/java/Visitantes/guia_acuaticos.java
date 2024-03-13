@@ -1,15 +1,20 @@
 package Visitantes;
 import Gestion_habitats.habitats;
-// En la clase guia_acuaticos
+import Animales.animal;
+import java.util.List;
+
 public class guia_acuaticos extends guia {
     @Override
     public void ofrecerGuia() {
-        System.out.println("Te damos la bienvenida al recorrido de animales acuáticos.");
+        System.out.println("Te damos la bienvenida al recorrido de acuáticos.");
     }
 
     @Override
     public void ofrecerGuia(habitats habitat) {
-        super.ofrecerGuia(habitat);
-        System.out.println("Te damos la bienvenida al recorrido de animales acuáticos.");
+        System.out.println("Te damos la bienvenida al recorrido de acuáticos.");
+        List<animal> animales = habitat.getAnimales();
+        for (animal animal : animales) {
+            System.out.println(animal.toString());
+        }
     }
 }
