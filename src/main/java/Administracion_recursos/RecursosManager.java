@@ -15,21 +15,5 @@ public class RecursosManager {
         medicinas.mostrarCantidad();
         personal.mostrarCantidad();
     }
-
-    public void agregarRecursos(String tipo, int cantidad) {
-        switch (tipo) {
-            case "Alimento":
-                alimento.agregar(cantidad);
-                break;
-            case "Medicinas":
-                medicinas.agregar(cantidad);
-                break;
-            case "Personal":
-                personal.agregar(cantidad);
-                break;
-            default:
-                System.out.println("Tipo de recurso inválido.");
-        }
-    }
 }
 
