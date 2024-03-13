@@ -1,6 +1,8 @@
 import java.util.Scanner;
 import Administracion_recursos.Recurso;
+import Visitantes.guia;
 import Visitantes.guia_reptiles;
+import Visitantes.guia_aves;
 import Mantenimiento_seguridad.Seguimiento;
 import Mantenimiento_seguridad.Vigilar;
 
@@ -18,9 +20,26 @@ public class Main {
         switch(opcion) {
             case 1:
                 System.out.println("¡Bienvenido, visitante!");
+                System.out.println("Por favor, elija el tipo de guía que desea:");
+                System.out.println("1. Guía de reptiles");
+                System.out.println("2. Guía de aves");
+
+                int opcionGuia = scanner.nextInt();
+
                 Recurso recursoVisitante = new Recurso("Recurso 1", 100);
-                guia_reptiles guiaVisitante = new guia_reptiles();
-                guiaVisitante.ofrecerGuia();
+                guia guiaVisitante;
+                switch(opcionGuia) {
+                    case 1:
+                        guiaVisitante = new guia_reptiles();
+                        guiaVisitante.ofrecerGuia();
+                        break;
+                    case 2:
+                        guiaVisitante = new guia_aves();
+                        guiaVisitante.ofrecerGuia();
+                        break;
+                    default:
+                        System.out.println("Opción no válida.");
+                }
                 break;
             case 2:
                 System.out.println("¡Bienvenido, miembro de seguridad!");
