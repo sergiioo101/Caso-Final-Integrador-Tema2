@@ -50,6 +50,12 @@ public class habitats {
         this.limpieza = limpieza;
     }
 
+    public void imprimirAnimales() {
+        for (animal animal : animales) {
+            System.out.println(animal.toString());
+        }
+    }
+
     @Override
     public String toString() {
         return "habitats []";
