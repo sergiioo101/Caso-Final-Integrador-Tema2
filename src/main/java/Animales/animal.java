@@ -10,11 +10,9 @@ public class animal {
     String peso;
     String alimentacion;
     String reproduccion;
-    String enfermedades;
     String vacunas;
     boolean salud;
     boolean comportamiento;
-    int id;
 
 
     public animal(String nombre, String especie, String sexo, String edad, String peso,String alimentacion, String reproduccion,String vacunas, boolean salud, boolean comportamiento) {
@@ -132,16 +130,6 @@ public class animal {
     public void setReproduccion(String reproduccion) {
         this.reproduccion = reproduccion;
     }
-    
-    public String getEnfermedades() {
-        return enfermedades;
-    }
-
-
-    public void setEnfermedades(String enfermedades) {
-        this.enfermedades = enfermedades;
-    }
-
 
     public String getVacunas() {
         return vacunas;
