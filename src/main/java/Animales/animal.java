@@ -44,6 +44,8 @@ public class animal {
         this.comportamiento = comportamiento;
     }
 
+    public animal(String param1, String param2, String param3, String param4, String param5, String param6, String param7, String param8, String param9, String param10, String param11, String param12, String param13, String param14, String param15, String param16, String param17, String param18) {
+    }
 
     @Override
     public String toString() {

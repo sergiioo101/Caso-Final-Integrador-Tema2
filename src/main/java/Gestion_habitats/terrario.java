@@ -4,7 +4,7 @@ public class terrario extends habitats    {
 
     boolean puede_caminar;
 
-    public terrario(float temperatura, float humedad, boolean limpieza, boolean puede_caminar) {
+    public terrario(float temperatura, float humedad, boolean limpieza) {
         super(temperatura, humedad, limpieza);
         this.puede_caminar = puede_caminar;
     }
