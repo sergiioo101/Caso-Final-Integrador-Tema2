@@ -9,8 +9,8 @@ public class animal {
     String edad;
     String alimentacion;
     String reproduccion;
-    String salud;
-    String comportamiento;
+    Boolean salud;
+    Boolean comportamiento;
 
 
     public animal(String nombre, String especie, String sexo, String edad, String alimentacion,String reproduccion, boolean salud, boolean comportamiento) {
@@ -20,8 +20,8 @@ public class animal {
         this.edad = edad;
         this.alimentacion = alimentacion;
         this.reproduccion = reproduccion;
-        this.salud = String.valueOf(salud);
-        this.comportamiento = String.valueOf(comportamiento);
+        this.salud = Boolean.valueOf(String.valueOf(salud));
+        this.comportamiento = Boolean.valueOf(String.valueOf(comportamiento));
     }
 
     @Override
@@ -101,20 +101,20 @@ public class animal {
         this.alimentacion = alimentacion;
     }
 
-    public String isSalud() {
+    public Boolean isSalud() {
         return salud;
     }
 
     public void setSalud(boolean salud) {
-        this.salud = String.valueOf(salud);
+        this.salud = Boolean.valueOf(String.valueOf(salud));
     }
 
-    public String isComportamiento() {
+    public Boolean isComportamiento() {
         return comportamiento;
     }
 
     public void setComportamiento(boolean comportamiento) {
-        this.comportamiento = String.valueOf(comportamiento);
+        this.comportamiento = Boolean.valueOf(String.valueOf(comportamiento));
     }
 
     public boolean buenasalud(boolean salud) {

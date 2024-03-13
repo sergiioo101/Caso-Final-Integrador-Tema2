@@ -47,5 +47,10 @@ public class animal_reptil extends animal {
     public void setTipoReptil(String tipoReptil) {
         this.tipoReptil = tipoReptil;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() + ", Escamas: " + this.tieneEscamas() + ", Cola: " + this.tieneCola() + ", Venenoso: " + this.esVenenoso();
+    }
 }
 
