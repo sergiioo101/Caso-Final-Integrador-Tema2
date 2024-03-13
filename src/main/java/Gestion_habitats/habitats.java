@@ -18,10 +18,6 @@ public class habitats {
         this.animales = new ArrayList<>();
     }
 
-    public static habitats getHabitat2() {
-        return null;
-    }
-
     public void agregarAnimal(animal animal) {
         this.animales.add(animal);
     }
@@ -89,5 +85,18 @@ public class habitats {
     public static habitats getHabitat1() {
         // Replace with the actual logic to get the habitat1 instance
         return new terrario(25.0f, 60.0f, true);
+
+    }
+    public static habitats getHabitat2() {
+        // Reemplaza con la lógica real para obtener la instancia de habitat2
+        return new habitats(30.0f, 60.0f, true);
+    }
+    public static habitats getHabitat3() {
+        // Reemplaza con la lógica real para obtener la instancia de habitat3
+        return new habitats(35.0f, 65.0f, true);
+    }
+    public static habitats getHabitat4() {
+        // Reemplaza con la lógica real para obtener la instancia de habitat4
+        return new habitats(40.0f, 70.0f, true);
     }
 }

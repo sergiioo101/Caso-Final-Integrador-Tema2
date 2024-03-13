@@ -5,17 +5,11 @@ public class animal {
 
     String nombre;
     String especie;
-    String raza;
-    String color;
     String sexo;
     String edad;
     String peso;
-    String altura;
-    String tipo;
-    String habitat;
     String alimentacion;
     String reproduccion;
-    String cuidados;
     String enfermedades;
     String vacunas;
     boolean salud;
@@ -23,23 +17,15 @@ public class animal {
     int id;
 
 
-    public animal(String nombre, String especie, String raza, String color, String sexo, String edad, String peso, String altura, String tipo, String habitat, String alimentacion, String reproduccion, String cuidados, String enfermedades, String vacunas, int id, boolean salud, boolean comportamiento) {
+    public animal(String nombre, String especie, String sexo, String edad, String peso,String alimentacion, String reproduccion,String vacunas, boolean salud, boolean comportamiento) {
         this.nombre = nombre;
         this.especie = especie;
-        this.raza = raza;
-        this.color = color;
         this.sexo = sexo;
         this.edad = edad;
         this.peso = peso;
-        this.altura = altura;
-        this.tipo = tipo;
-        this.habitat = habitat;
         this.alimentacion = alimentacion;
         this.reproduccion = reproduccion;
-        this.cuidados = cuidados;
-        this.enfermedades = enfermedades;
         this.vacunas = vacunas;
-        this.id = id;
         this.salud = salud;
         this.comportamiento = comportamiento;
     }
@@ -47,10 +33,13 @@ public class animal {
     public animal(String param1, String param2, String param3, String param4, String param5, String param6, String param7, String param8, String param9, String param10, String param11, String param12, String param13, String param14, String param15, String param16, String param17, String param18) {
     }
 
-    @Override
-    public String toString() {
-        return "animal []";
+    public animal(String cocodrilo, String reptil, String carnívoro, String aguaSalada, String tropical, String verde, String grande) {
     }
+
+    @Override
+        public String toString() {
+            return "Nombre: " + this.nombre + ", Especie: " + this.especie /*+ ", Otros atributos: " + otros atributos...*/;
+        }
 
     @Override
     protected Object clone() throws CloneNotSupportedException {
@@ -95,28 +84,7 @@ public class animal {
     public void setEspecie(String especie) {
         this.especie = especie;
     }
-
-
-    public String getRaza() {
-        return raza;
-    }
-
-
-    public void setRaza(String raza) {
-        this.raza = raza;
-    }
-
-
-    public String getColor() {
-        return color;
-    }
-
-
-    public void setColor(String color) {
-        this.color = color;
-    }
-
-
+    
     public String getSexo() {
         return sexo;
     }
@@ -145,38 +113,7 @@ public class animal {
     public void setPeso(String peso) {
         this.peso = peso;
     }
-
-
-    public String getAltura() {
-        return altura;
-    }
-
-
-    public void setAltura(String altura) {
-        this.altura = altura;
-    }
-
-
-    public String getTipo() {
-        return tipo;
-    }
-
-
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
-    }
-
-
-    public String getHabitat() {
-        return habitat;
-    }
-
-
-    public void setHabitat(String habitat) {
-        this.habitat = habitat;
-    }
-
-
+    
     public String getAlimentacion() {
         return alimentacion;
     }
@@ -195,18 +132,7 @@ public class animal {
     public void setReproduccion(String reproduccion) {
         this.reproduccion = reproduccion;
     }
-
-
-    public String getCuidados() {
-        return cuidados;
-    }
-
-
-    public void setCuidados(String cuidados) {
-        this.cuidados = cuidados;
-    }
-
-
+    
     public String getEnfermedades() {
         return enfermedades;
     }
@@ -225,17 +151,7 @@ public class animal {
     public void setVacunas(String vacunas) {
         this.vacunas = vacunas;
     }
-
-
-    public int getId() {
-        return id;
-    }
-
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
+    
     public boolean isSalud() {
         return salud;
     }
@@ -342,10 +258,4 @@ public class animal {
     public void registrarComportamiento(boolean comportamiento) {
         System.out.println(buencomportamiento(comportamiento));
     }
-
-
-
-
-
-
 }

@@ -12,8 +12,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         // Crear animales
-        animal animal1 = new animal("Sebas", "param2", "param3", "param4", "param5", "param6", "param7", "param8", "param9", "Terrario", "param11", "param12", "param13", "param14", "param15", "param16", "param17", "param18");
-        animal animal2 = new animal("param1", "param2", "param3", "param4", "param5", "param6", "param7", "param8", "param9", "param10", "param11", "param12", "param13", "param14", "param15", "param16", "param17", "param18");
+        animal animal1 = new animal("Cocodrilo", "Reptil", "Carnívoro", "Agua salada", "Tropical", "Verde", "Grande");
 
         // Importar hábitats ya creados
         habitats habitat1 = Gestion_habitats.habitats.getHabitat1();
@@ -23,14 +22,16 @@ public class Main {
 
         // Agregar animales a los hábitats correspondientes
         habitat1.agregarAnimal(animal1);
+        habitat2.agregarAnimal(animal1);
         habitat3.agregarAnimal(animal1);
+        habitat4.agregarAnimal(animal1);
 
-            System.out.println("¡Bienvenido al Zoológico!");
-            System.out.println("Por favor, elija su rol:");
-            System.out.println("1. Visitante");
-            System.out.println("2. Miembro de seguridad");
+        System.out.println("¡Bienvenido al Zoológico!");
+        System.out.println("Por favor, elija su rol:");
+        System.out.println("1. Visitante");
+        System.out.println("2. Miembro de seguridad");
 
-            int opcion = scanner.nextInt();
+        int opcion = scanner.nextInt();
 
         switch(opcion) {
             case 1:
@@ -48,26 +49,19 @@ public class Main {
                 switch(opcionGuia) {
                     case 1:
                         guiaVisitante = new guia_reptiles();
-                        habitats terrario = new terrario(30, 60, true);
-                        guiaVisitante.ofrecerGuia(terrario); // pass habitat1 as argument
-                        habitat1 = terrario;
+                        guiaVisitante.ofrecerGuia(habitat1); // pass habitat1 as argument
                         break;
                     case 2:
                         guiaVisitante = new guia_aves();
-                        habitats aviario = new habitats(25, 70, true);
-                        guiaVisitante.ofrecerGuia(aviario); // pass habitat1 as argument
-                        habitat2 = aviario;
+                        guiaVisitante.ofrecerGuia(habitat2); // pass habitat2 as argument
                         break;
                     case 3:
                         guiaVisitante = new guia_acuaticos();
-                        habitats acuario = new habitats(25, 70, true);
-                        guiaVisitante.ofrecerGuia(acuario); // pass habitat1 as argument
+                        guiaVisitante.ofrecerGuia(habitat3); // pass habitat3 as argument
                         break;
-                        habitat3 = acuario;
                     case 4:
                         guiaVisitante = new guia_granja();
-                        habitats granja = new habitats(25, 70, true);
-                        guiaVisitante.ofrecerGuia(granja); // pass habitat1 as argument
+                        guiaVisitante.ofrecerGuia(habitat4); // pass habitat4 as argument
                         break;
                     default:
                         System.out.println("Opción no válida.");
