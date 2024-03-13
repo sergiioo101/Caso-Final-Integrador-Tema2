@@ -1,6 +1,9 @@
 import java.util.Scanner;
 import Administracion_recursos.Recurso;
 import Animales.animal;
+import Animales.animal_acuatico;
+import Animales.animal_aviario;
+import Animales.animal_reptil;
 import Gestion_habitats.habitats;
 import Gestion_habitats.terrario;
 import Visitantes.*;
@@ -12,7 +15,10 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         // Crear animales
-        animal animal1 = new animal("Cocodrilo", "Reptil", "Carnívoro", "Agua salada", "Tropical", "Verde", "Grande");
+        animal_reptil cocodrilo = new animal_reptil("Cocodrilo", "Reptil", "Carnívoro", "Agua salada", "Tropical", "Verde", "Grande", 180, true, false, "Cocodrilo");
+        animal_aviario aguila = new animal_aviario("Águila", "Ave", "Carnívoro", "Montañas", "Templado", "Marrón", "Mediano", "Águila");
+        animal_acuatico tiburon = new animal_acuatico("Tiburón", "Pez", "Carnívoro", "Océano", "Tropical", "Gris", "Grande", true, true, true, "Salada");
+
 
         // Importar hábitats ya creados
         habitats habitat1 = Gestion_habitats.habitats.getHabitat1();
@@ -21,10 +27,9 @@ public class Main {
         habitats habitat4 = Gestion_habitats.habitats.getHabitat4();
 
         // Agregar animales a los hábitats correspondientes
-        habitat1.agregarAnimal(animal1);
-        habitat2.agregarAnimal(animal1);
-        habitat3.agregarAnimal(animal1);
-        habitat4.agregarAnimal(animal1);
+        habitat1.agregarAnimal(cocodrilo);
+        habitat2.agregarAnimal(aguila);
+        habitat3.agregarAnimal(tiburon);
 
         System.out.println("¡Bienvenido al Zoológico!");
         System.out.println("Por favor, elija su rol:");

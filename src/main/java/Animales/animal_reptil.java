@@ -18,6 +18,10 @@ public class animal_reptil extends animal {
         this.tipoReptil = tipoReptil;
     }
 
+    public animal_reptil(String cocodrilo, String reptil, String carnívoro, String aguaSalada, String tropical, String verde, String grande, int i, boolean b, boolean b1, String cocodrilo1) {
+        super();
+    }
+
     public boolean tieneEscamas() {
         return escamas;
     }
