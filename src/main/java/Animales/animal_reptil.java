@@ -10,6 +10,7 @@ public class animal_reptil extends animal {
                          String peso, String alimentacion, String reproduccion,
                          String vacunas, String salud, String comportamiento,
                          boolean escamas, boolean cola, boolean venenoso, String tipoReptil) {
+
         super(nombre, especie,sexo, edad, peso, alimentacion, reproduccion,
                 vacunas, salud, String.valueOf(comportamiento), escamas, cola, venenoso, tipoReptil);
         this.escamas = escamas;

@@ -7,7 +7,6 @@ public class animal {
     String especie;
     String sexo;
     String edad;
-    String peso;
     String alimentacion;
     String reproduccion;
     String vacunas;
@@ -20,7 +19,6 @@ public class animal {
         this.especie = especie;
         this.sexo = sexo;
         this.edad = edad;
-        this.peso = peso;
         this.alimentacion = alimentacion;
         this.reproduccion = reproduccion;
         this.vacunas = vacunas;
