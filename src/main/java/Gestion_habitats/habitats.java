@@ -113,7 +113,8 @@ public class habitats {
     public void agregarAnimal(animal_acuatico tiburon, animal_acuatico pez) {
     }
 
-    public void agregarAnimal(animal_terrestre vaca) {
+    public void agregarAnimal(animal_terrestre vaca, animal_terrestre tortuga) {
 
     }
 }
+

@@ -17,8 +17,8 @@ public class Main {
         animal_terrestre vaca = new animal_terrestre("Lola", "Vaca Rubia Gallega", "Femenino", "5", "Herbivora", "Viviparo",true,true,true,true,true);
         animal_reptil iguana = new animal_reptil("Juanita", "Iguana", "Femenino", "7", "Herbivora", "Oviparo",true,true,true,true,false);
         animal_aviario loro = new animal_aviario("Pepita", "Loro Guacamayo", "Femenino", "3", "Herbivora", "Oviparo",true,true,true,true,true);
-        animal_acuatico pez = new animal_acuatico("Dory", "Pez Payaso", "Masculino", "1", "Herbivora", "Oviparo",true,true,true,true,false);
-
+        animal_acuatico pez = new animal_acuatico("Nemo", "Pez Payaso", "Masculino", "1", "Herbivora", "Oviparo",true,true,true,true,false);
+        animal_terrestre tortuga = new animal_terrestre("Concha", "Tortuga de Florida", "Femenino", "2", "Herbivora", "Oviparo",true,true,true,true,true);
 
         // Importar hábitats ya creados
         habitats habitat1 = Gestion_habitats.habitats.getHabitat1();
@@ -30,7 +30,7 @@ public class Main {
         habitat1.agregarAnimal(cocodrilo, iguana);
         habitat2.agregarAnimal(aguila, loro);
         habitat3.agregarAnimal(tiburon, pez);
-        habitat4.agregarAnimal(vaca);
+        habitat4.agregarAnimal(vaca, tortuga);
 
         System.out.println("¡Bienvenido al Zoológico!");
         System.out.println("Por favor, elija su rol:");
