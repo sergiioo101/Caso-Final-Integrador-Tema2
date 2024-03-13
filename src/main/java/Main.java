@@ -1,6 +1,6 @@
 import java.util.Scanner;
 import Administracion_recursos.Recurso;
-import Visitantes.guia;
+import Visitantes.guia_reptiles;
 import Mantenimiento_seguridad.Seguimiento;
 import Mantenimiento_seguridad.Vigilar;
 
@@ -19,13 +19,13 @@ public class Main {
             case 1:
                 System.out.println("¡Bienvenido, visitante!");
                 Recurso recursoVisitante = new Recurso("Recurso 1", 100);
-                guia guiaVisitante = new guia("Guia 1", 30);
+                guia_reptiles guiaVisitante = new guia_reptiles();
                 guiaVisitante.ofrecerGuia();
                 break;
             case 2:
                 System.out.println("¡Bienvenido, miembro de seguridad!");
                 Recurso recursoSeguridad = new Recurso("Recurso 2", 200);
-                guia guiaSeguridad = new guia("Guia 2", 35);
+                guia_reptiles guiaSeguridad = new guia_reptiles();
                 Seguimiento seguimiento = new Seguimiento("Seguimiento 1", 40, recursoSeguridad, guiaSeguridad);
                 Vigilar vigilar = new Vigilar("Vigilar 1", 50, recursoSeguridad);
                 seguimiento.hacerSeguimiento();
