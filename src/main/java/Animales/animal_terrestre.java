@@ -51,6 +51,6 @@ public class animal_terrestre extends animal{
     // En la clase animal_terrestre.java
     @Override
     public String toString() {
-        return super.toString() + ", Patas: " + (this.patas ? "Sí" : "No") + ", Cola: " + this.cola + ", Pelaje: " + (this.pelaje ? "Sí" : "No");
+        return super.toString() + ", Patas: " + (this.patas ? "Sí" : "No") + ", Cola: " + (this.cola ? "Sí" : "No") + ", Pelaje: " + (this.pelaje ? "Sí" : "No");
     }
 }

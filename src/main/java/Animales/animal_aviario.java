@@ -50,6 +50,6 @@ public class animal_aviario extends animal {
     // En la clase animal_aviario.java
     @Override
     public String toString() {
-        return super.toString() + ", Vuela: " + (this.vuela ? "Sí" : "No") + ", Pico: " + this.pico + ", Plumaje: " + (this.plumaje ? "Sí" : "No");
+        return super.toString() + ", Vuela: " + (this.vuela ? "Sí" : "No") + ", Pico: " + (this.pico ? "Sí" : "No") + ", Plumaje: " + (this.plumaje ? "Sí" : "No");
     }
 }

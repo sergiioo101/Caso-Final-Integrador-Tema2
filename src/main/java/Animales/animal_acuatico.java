@@ -51,6 +51,6 @@ public class animal_acuatico extends animal{
 // En la clase animal_acuatico.java
     @Override
     public String toString() {
-        return super.toString() + ", Tiene aletas: " + (this.aletas ? "Sí" : "No") + ", Branquias: " + this.branquias + ", Escamas: " + (this.escamas ? "Sí" : "No");
+        return super.toString() + ", Tiene aletas: " + (this.aletas ? "Sí" : "No") + ", Branquias: " + (this.branquias ? "Si" : "No") + ", Escamas: " + (this.escamas ? "Sí" : "No");
     }
 }

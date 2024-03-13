@@ -17,7 +17,7 @@ public class RecursosManager {
     }
 
     public void agregarRecursos(String tipo, int cantidad) {
-        switch(tipo) {
+        switch (tipo) {
             case "Alimento":
                 alimento.agregar(cantidad);
                 break;
@@ -26,22 +26,6 @@ public class RecursosManager {
                 break;
             case "Personal":
                 personal.agregar(cantidad);
-                break;
-            default:
-                System.out.println("Tipo de recurso inválido.");
-        }
-    }
-
-    public void consumirRecursos(String tipo, int cantidad) {
-        switch(tipo) {
-            case "Alimento":
-                alimento.consumir(cantidad);
-                break;
-            case "Medicinas":
-                medicinas.consumir(cantidad);
-                break;
-            case "Personal":
-                personal.consumir(cantidad);
                 break;
             default:
                 System.out.println("Tipo de recurso inválido.");
