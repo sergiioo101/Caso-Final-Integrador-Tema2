@@ -50,7 +50,7 @@ public class animal_reptil extends animal {
 
     @Override
     public String toString() {
-        return super.toString() + ", Escamas: " + this.tieneEscamas() + ", Cola: " + this.tieneCola() + ", Venenoso: " + this.esVenenoso();
+        return super.toString() + ", Escamas: " + (this.tieneEscamas() ? "Sí" : "No") + ", Cola: " + (this.tieneCola() ? "Sí" : "No") + ", Venenoso: " + (this.esVenenoso() ? "Sí" : "No");
     }
 }
 
