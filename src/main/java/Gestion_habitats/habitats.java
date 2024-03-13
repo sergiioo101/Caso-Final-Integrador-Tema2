@@ -1,43 +1,29 @@
 package Gestion_habitats;
 
+import Animales.animal;
+import java.util.ArrayList;
+import java.util.List;
+
 public class habitats {
     float temperatura;
     float humedad;
     boolean limpieza;
+    List<animal> animales;
 
     public habitats(float temperatura,float humedad,boolean limpieza) {
+        super();
         this.temperatura = temperatura;
         this.humedad = humedad;
         this.limpieza = limpieza;
+        this.animales = new ArrayList<>();
     }
 
-    @Override
-    public String toString() {
-        return "habitats []";
+    public void agregarAnimal(animal animal) {
+        this.animales.add(animal);
     }
 
-    @Override
-    protected Object clone() throws CloneNotSupportedException {
-        // TODO Auto-generated method stub
-        return super.clone();
-    }
-
-    @Override
-    public boolean equals(Object obj) {
-        // TODO Auto-generated method stub
-        return super.equals(obj);
-    }
-
-    @Override
-    protected void finalize() throws Throwable {
-        // TODO Auto-generated method stub
-        super.finalize();
-    }
-
-    @Override
-    public int hashCode() {
-        // TODO Auto-generated method stub
-        return super.hashCode();
+    public List<animal> getAnimales() {
+        return animales;
     }
 
     public float getTemperatura() {
@@ -64,4 +50,28 @@ public class habitats {
         this.limpieza = limpieza;
     }
 
+    @Override
+    public String toString() {
+        return "habitats []";
+    }
+
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+        return super.clone();
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        return super.equals(obj);
+    }
+
+    @Override
+    protected void finalize() throws Throwable {
+        super.finalize();
+    }
+
+    @Override
+    public int hashCode() {
+        return super.hashCode();
+    }
 }
