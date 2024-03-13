@@ -1,7 +1,6 @@
 package Animales;
 
 public class animal_aviario extends animal {
-    // Add your modifications here
 
     boolean vuela;
     boolean pico;
