@@ -99,4 +99,10 @@ public class habitats {
         // Reemplaza con la lógica real para obtener la instancia de habitat4
         return new habitats(40.0f, 70.0f, true);
     }
+
+    public void mostrarAnimales() {
+        for (animal animal : animales) {
+            System.out.println(animal.toString());
+        }
+    }
 }

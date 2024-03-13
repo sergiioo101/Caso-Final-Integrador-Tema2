@@ -8,8 +8,8 @@ public class guia_reptiles extends guia {
         System.out.println("Te damos la bienvenida al recorrido de reptiles.");
     }
 
-    @Override
     public void ofrecerGuia(habitats habitat) {
-
+        System.out.println("Te damos la bienvenida al recorrido de reptiles.");
+        habitat.mostrarAnimales();
     }
 }
