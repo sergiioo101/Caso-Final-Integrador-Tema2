@@ -1,6 +1,7 @@
 package Gestion_habitats;
 
-import Animales.animal;
+import Animales.*;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -18,7 +19,7 @@ public class habitats {
         this.animales = new ArrayList<>();
     }
 
-    public void agregarAnimal(animal animal) {
+    public void agregarAnimal(animal animal, animal_reptil iguana) {
         this.animales.add(animal);
     }
 
@@ -104,5 +105,15 @@ public class habitats {
         for (animal animal : animales) {
             System.out.println(animal.toString());
         }
+    }
+
+    public void agregarAnimal(animal_aviario aguila, animal_aviario loro) {
+    }
+
+    public void agregarAnimal(animal_acuatico tiburon, animal_acuatico pez) {
+    }
+
+    public void agregarAnimal(animal_terrestre vaca) {
+
     }
 }

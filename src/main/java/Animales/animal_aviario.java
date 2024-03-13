@@ -8,7 +8,7 @@ public class animal_aviario extends animal {
     String tipo_aviario;
 
     public animal_aviario(String nombre, String especie, String sexo, String edad, String alimentacion, String reproduccion,
-                          boolean salud, boolean comportamiento,boolean vuela, boolean pico, boolean plumaje, String tipo_aviario) {
+                          boolean salud, boolean comportamiento,boolean vuela, boolean pico, boolean plumaje) {
         super(nombre, especie,sexo, edad, alimentacion, reproduccion, salud, comportamiento);
         this.vuela = vuela;
         this.pico = pico;

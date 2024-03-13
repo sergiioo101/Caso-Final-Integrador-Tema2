@@ -1,11 +1,7 @@
 import java.util.Scanner;
 import Administracion_recursos.Recurso;
-import Animales.animal;
-import Animales.animal_acuatico;
-import Animales.animal_aviario;
-import Animales.animal_reptil;
+import Animales.*;
 import Gestion_habitats.habitats;
-import Gestion_habitats.terrario;
 import Visitantes.*;
 import Mantenimiento_seguridad.Seguimiento;
 import Mantenimiento_seguridad.Vigilar;
@@ -15,8 +11,13 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         // Crear animales
-        animal_reptil cocodrilo = new animal_reptil("Juanjo", "Cocodrilo", "Masculino", "14", "Carnivora", "Oviparo",true,true,true,true,false);
-        animal_aviario aguila = new animal_aviario("Pepito", "Aguila", "Femenino", "10", "Carnivora", "Oviparo",true,true,true,true,true);
+        animal_reptil cocodrilo = new animal_reptil("Juanjo", "Cocodrilo Americano", "Masculino", "14", "Carnivora", "Oviparo",true,true,true,true,false);
+        animal_aviario aguila = new animal_aviario("Pepito", "Aguila Real", "Femenino", "10", "Carnivora", "Oviparo",true,true,true,true,true);
+        animal_acuatico tiburon = new animal_acuatico("Tiburoncito", "Tiburon Tigre", "Masculino", "20", "Carnivora", "Oviparo",true,true,true,true,false);
+        animal_terrestre vaca = new animal_terrestre("Lola", "Vaca Rubia Gallega", "Femenino", "5", "Herbivora", "Viviparo",true,true,true,true,true);
+        animal_reptil iguana = new animal_reptil("Juanita", "Iguana", "Femenino", "7", "Herbivora", "Oviparo",true,true,true,true,false);
+        animal_aviario loro = new animal_aviario("Pepita", "Loro Guacamayo", "Femenino", "3", "Herbivora", "Oviparo",true,true,true,true,true);
+        animal_acuatico pez = new animal_acuatico("Dory", "Pez Payaso", "Masculino", "1", "Herbivora", "Oviparo",true,true,true,true,false);
 
 
         // Importar hábitats ya creados
@@ -26,9 +27,10 @@ public class Main {
         habitats habitat4 = Gestion_habitats.habitats.getHabitat4();
 
         // Agregar animales a los hábitats correspondientes
-        habitat1.agregarAnimal(cocodrilo);
-        //habitat2.agregarAnimal(aguila);
-        //habitat3.agregarAnimal(tiburon);
+        habitat1.agregarAnimal(cocodrilo, iguana);
+        habitat2.agregarAnimal(aguila, loro);
+        habitat3.agregarAnimal(tiburon, pez);
+        habitat4.agregarAnimal(vaca);
 
         System.out.println("¡Bienvenido al Zoológico!");
         System.out.println("Por favor, elija su rol:");
