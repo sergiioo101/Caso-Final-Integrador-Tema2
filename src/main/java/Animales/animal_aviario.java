@@ -13,7 +13,6 @@ public class animal_aviario extends animal {
         this.vuela = vuela;
         this.pico = pico;
         this.plumaje = plumaje;
-        this.tipo_aviario = tipo_aviario;
     }
 
     public boolean isVuela() {
@@ -48,4 +47,9 @@ public class animal_aviario extends animal {
         this.tipo_aviario = tipo_aviario;
     }
 
+    // En la clase animal_aviario.java
+    @Override
+    public String toString() {
+        return super.toString() + ", Vuela: " + (this.vuela ? "Sí" : "No") + ", Pico: " + this.pico + ", Plumaje: " + (this.plumaje ? "Sí" : "No");
+    }
 }

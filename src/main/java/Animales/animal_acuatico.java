@@ -13,7 +13,6 @@ public class animal_acuatico extends animal{
         this.aletas = aletas;
         this.branquias = branquias;
         this.escamas = escamas;
-        this.tipo_agua = tipo_agua;
     }
 
     public boolean isAletas() {
@@ -48,4 +47,10 @@ public class animal_acuatico extends animal{
         this.tipo_agua = tipo_agua;
     }
 
+    // En la clase animal_acuatico.java
+// En la clase animal_acuatico.java
+    @Override
+    public String toString() {
+        return super.toString() + ", Tiene aletas: " + (this.aletas ? "Sí" : "No") + ", Branquias: " + this.branquias + ", Escamas: " + (this.escamas ? "Sí" : "No");
+    }
 }

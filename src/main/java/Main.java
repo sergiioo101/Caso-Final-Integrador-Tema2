@@ -19,6 +19,10 @@ public class Main {
         animal_aviario loro = new animal_aviario("Pepita", "Loro Guacamayo", "Femenino", "3", "Herbivora", "Oviparo",true,true,true,true,true);
         animal_acuatico pez = new animal_acuatico("Nemo", "Pez Payaso", "Masculino", "1", "Herbivora", "Oviparo",true,true,true,true,false);
         animal_terrestre tortuga = new animal_terrestre("Concha", "Tortuga de Florida", "Femenino", "2", "Herbivora", "Oviparo",true,true,true,true,true);
+        animal_reptil serpiente = new animal_reptil("Vinicius", "Serpiente de cascabel", "Femenino", "5", "Carnivora", "Oviparo",true,true,true,true,false);
+        animal_aviario halcon = new animal_aviario("Falcon", "Halcón peregrino", "Masculino", "7", "Carnivora", "Oviparo",true,true,true,true,true);
+        animal_acuatico delfin = new animal_acuatico("Flipper", "Delfín mular", "Masculino", "10", "Carnivora", "Oviparo",true,true,true,true,false);
+        animal_terrestre cerdo = new animal_terrestre("Porky", "Cerdo Ibérico", "Masculino", "4", "Omnivora", "Viviparo",true,true,true,true,true);
 
         // Importar hábitats ya creados
         habitats habitat1 = Gestion_habitats.habitats.getHabitat1();
@@ -27,10 +31,18 @@ public class Main {
         habitats habitat4 = Gestion_habitats.habitats.getHabitat4();
 
         // Agregar animales a los hábitats correspondientes
-        habitat1.agregarAnimal(cocodrilo, iguana);
-        habitat2.agregarAnimal(aguila, loro);
-        habitat3.agregarAnimal(tiburon, pez);
-        habitat4.agregarAnimal(vaca, tortuga);
+        habitat1.agregarAnimal(cocodrilo);
+        habitat1.agregarAnimal(iguana);
+        habitat1.agregarAnimal(serpiente);
+        habitat2.agregarAnimal(halcon);
+        habitat2.agregarAnimal(aguila);
+        habitat2.agregarAnimal(loro);
+        habitat3.agregarAnimal(tiburon);
+        habitat3.agregarAnimal(delfin);
+        habitat3.agregarAnimal(pez);
+        habitat4.agregarAnimal(vaca);
+        habitat4.agregarAnimal(cerdo);
+        habitat4.agregarAnimal(tortuga);
 
         System.out.println("¡Bienvenido al Zoológico!");
         System.out.println("Por favor, elija su rol:");

@@ -48,5 +48,9 @@ public class animal_terrestre extends animal{
         this.tipo_terrestre = tipo_terrestre;
     }
 
-
+    // En la clase animal_terrestre.java
+    @Override
+    public String toString() {
+        return super.toString() + ", Patas: " + (this.patas ? "Sí" : "No") + ", Cola: " + this.cola + ", Pelaje: " + (this.pelaje ? "Sí" : "No");
+    }
 }
