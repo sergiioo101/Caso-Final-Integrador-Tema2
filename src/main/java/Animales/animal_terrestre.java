@@ -11,7 +11,7 @@ public class animal_terrestre extends animal{
                             String peso, String altura, String tipo, String habitat, String alimentacion, String reproduccion,
                             String cuidados, String enfermedades, String vacunas, String id, String salud, boolean comportamiento, boolean patas, boolean cola,
                             boolean pelaje, String tipo_terrestre) {
-        super(nombre, especie, raza, sexo, edad, peso, altura, tipo, habitat, alimentacion, reproduccion, cuidados,
+        super(nombre, especie, raza, sexo, edad, peso, altura,habitat, alimentacion, reproduccion, cuidados,
                 enfermedades, vacunas, id, salud, String.valueOf(comportamiento));
         this.patas = patas;
         this.cola = cola;

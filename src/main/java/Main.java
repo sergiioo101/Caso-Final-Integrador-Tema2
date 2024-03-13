@@ -15,9 +15,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         // Crear animales
-        animal_reptil cocodrilo = new animal_reptil("Cocodrilo", "Reptil", "Carnívoro", "Agua salada", "Tropical", "Verde", "Grande", 180, true, false, "Cocodrilo");
-        animal_aviario aguila = new animal_aviario("Águila", "Ave", "Carnívoro", "Montañas", "Templado", "Marrón", "Mediano", "Águila");
-        animal_acuatico tiburon = new animal_acuatico("Tiburón", "Pez", "Carnívoro", "Océano", "Tropical", "Gris", "Grande", true, true, true, "Salada");
+
 
 
         // Importar hábitats ya creados
