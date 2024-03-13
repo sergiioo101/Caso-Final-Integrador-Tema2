@@ -17,11 +17,13 @@ public class Main {
 
         // Importar hábitats ya creados
         habitats habitat1 = Gestion_habitats.habitats.getHabitat1();
-        //habitats habitat2 = Gestion_habitats.habitats.getHabitat2();
+        habitats habitat2 = Gestion_habitats.habitats.getHabitat2();
+        habitats habitat3 = Gestion_habitats.habitats.getHabitat3();
+        habitats habitat4 = Gestion_habitats.habitats.getHabitat4();
 
         // Agregar animales a los hábitats correspondientes
         habitat1.agregarAnimal(animal1);
-        //habitat2.agregarAnimal(animal2);
+        habitat3.agregarAnimal(animal1);
 
             System.out.println("¡Bienvenido al Zoológico!");
             System.out.println("Por favor, elija su rol:");
@@ -54,12 +56,14 @@ public class Main {
                         guiaVisitante = new guia_aves();
                         habitats aviario = new habitats(25, 70, true);
                         guiaVisitante.ofrecerGuia(aviario); // pass habitat1 as argument
+                        habitat2 = aviario;
                         break;
                     case 3:
                         guiaVisitante = new guia_acuaticos();
                         habitats acuario = new habitats(25, 70, true);
                         guiaVisitante.ofrecerGuia(acuario); // pass habitat1 as argument
                         break;
+                        habitat3 = acuario;
                     case 4:
                         guiaVisitante = new guia_granja();
                         habitats granja = new habitats(25, 70, true);

@@ -18,6 +18,10 @@ public class habitats {
         this.animales = new ArrayList<>();
     }
 
+    public static habitats getHabitat2() {
+        return null;
+    }
+
     public void agregarAnimal(animal animal) {
         this.animales.add(animal);
     }
