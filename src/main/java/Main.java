@@ -21,6 +21,8 @@ public class Main {
                 System.out.println("Por favor, elija el tipo de guía que desea:");
                 System.out.println("1. Guía de reptiles");
                 System.out.println("2. Guía de aves");
+                System.out.println("3. Guía de animales acuáticos");
+                System.out.println("4. Guía de la granja");
 
                 int opcionGuia = scanner.nextInt();
 
@@ -40,7 +42,7 @@ public class Main {
                         guiaVisitante.ofrecerGuia();
                         break;
                     case 4:
-                        guiaVisitante = new granja();
+                        guiaVisitante = new guia_granja();
                         guiaVisitante.ofrecerGuia();
                         break;
                     default:
