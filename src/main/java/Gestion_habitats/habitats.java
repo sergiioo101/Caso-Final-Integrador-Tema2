@@ -59,7 +59,10 @@ public class habitats {
 
     @Override
     public String toString() {
-        return "habitats []";
+        return "Habitat: " +
+                "\nTemperatura: " + this.temperatura +
+                "\nHumedad: " + this.humedad +
+                "\nLimpieza: " + (this.limpieza ? "Sí" : "No");
     }
 
     @Override
