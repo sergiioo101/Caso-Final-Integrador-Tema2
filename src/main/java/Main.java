@@ -15,7 +15,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         // Crear animales
-
+        animal_reptil cocodrilo = new animal_reptil("Sebas", "Cocodrilo", "Masculino", "12", "Carnivora", Oviparo, 2);
 
 
         // Importar hábitats ya creados

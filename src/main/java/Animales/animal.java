@@ -8,19 +8,17 @@ public class animal {
     String sexo;
     String edad;
     String alimentacion;
-    String reproduccion;
     String vacunas;
     String salud;
     String comportamiento;
 
 
-    public animal(String nombre, String especie, String sexo, String edad, String peso,String alimentacion, String reproduccion,String vacunas, boolean salud, boolean comportamiento) {
+    public animal(String nombre, String especie, String sexo, String edad, String alimentacion, String vacunas, String s, boolean salud, boolean comportamiento) {
         this.nombre = nombre;
         this.especie = especie;
         this.sexo = sexo;
         this.edad = edad;
         this.alimentacion = alimentacion;
-        this.reproduccion = reproduccion;
         this.vacunas = vacunas;
         this.salud = String.valueOf(salud);
         this.comportamiento = String.valueOf(comportamiento);
@@ -94,16 +92,6 @@ public class animal {
         this.edad = edad;
     }
 
-
-    public String getPeso() {
-        return peso;
-    }
-
-
-    public void setPeso(String peso) {
-        this.peso = peso;
-    }
-    
     public String getAlimentacion() {
         return alimentacion;
     }
@@ -111,16 +99,6 @@ public class animal {
 
     public void setAlimentacion(String alimentacion) {
         this.alimentacion = alimentacion;
-    }
-
-
-    public String getReproduccion() {
-        return reproduccion;
-    }
-
-
-    public void setReproduccion(String reproduccion) {
-        this.reproduccion = reproduccion;
     }
 
     public String getVacunas() {

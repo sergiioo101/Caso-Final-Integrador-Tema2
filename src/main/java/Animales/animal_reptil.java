@@ -7,12 +7,12 @@ public class animal_reptil extends animal {
     String tipoReptil;
 
     public animal_reptil(String nombre, String especie, String sexo, String edad,
-                         String peso, String alimentacion, String reproduccion,
-                         String vacunas, String salud, String comportamiento,
+                         String alimentacion, String reproduccion,
+                         String vacunas, boolean salud, boolean comportamiento,
                          boolean escamas, boolean cola, boolean venenoso, String tipoReptil) {
 
-        super(nombre, especie,sexo, edad, peso, alimentacion, reproduccion,
-                vacunas, salud, String.valueOf(comportamiento), escamas, cola, venenoso, tipoReptil);
+        super(nombre, especie,sexo, edad, alimentacion, reproduccion,
+                vacunas, salud, comportamiento);
         this.escamas = escamas;
         this.cola = cola;
         this.venenoso = venenoso;
