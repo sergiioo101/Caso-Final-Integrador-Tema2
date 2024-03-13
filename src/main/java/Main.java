@@ -15,7 +15,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         // Crear animales
-        animal_reptil cocodrilo = new animal_reptil("Cocodrilo", "Carnívoro", "Reptil", "Cocodrilo del Nilo", "Verde", "Oviparo",);
+        animal_reptil cocodrilo = new animal_reptil("Cocodrilo", "Carnívoro", "Reptil", "Cocodrilo del Nilo", "Verde", "Oviparo",true,true,true,true,true);
 
 
         // Importar hábitats ya creados
@@ -52,7 +52,7 @@ public class Main {
                 switch(opcionGuia) {
                     case 1:
                         guiaVisitante = new guia_reptiles();
-                        guiaVisitante.ofrecerGuia(habitat1); // pass habitat1 as argument
+                        guiaVisitante.ofrecerGuia(habitat1);// pass habitat1 as argument
                         break;
                     case 2:
                         guiaVisitante = new guia_aves();

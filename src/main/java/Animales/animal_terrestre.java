@@ -7,16 +7,13 @@ public class animal_terrestre extends animal{
     boolean pelaje;
     String tipo_terrestre;
 
-    public animal_terrestre(String nombre, String especie, String raza, String color, String sexo, String edad,
-                            String peso, String altura, String tipo, String habitat, String alimentacion, String reproduccion,
-                            String cuidados, String enfermedades, String vacunas, String id, String salud, boolean comportamiento, boolean patas, boolean cola,
-                            boolean pelaje, String tipo_terrestre) {
-        super(nombre, especie, raza, sexo, edad, peso, altura,habitat, alimentacion, reproduccion, cuidados,
-                enfermedades, vacunas, id, salud, String.valueOf(comportamiento));
+    public animal_terrestre(String nombre, String especie, String sexo, String edad, String alimentacion, String reproduccion,
+                            boolean salud, boolean comportamiento,boolean patas, boolean cola, boolean pelaje)
+    {
+        super(nombre, especie, sexo, edad, alimentacion,reproduccion, salud, comportamiento);
         this.patas = patas;
         this.cola = cola;
         this.pelaje = pelaje;
-        this.tipo_terrestre = tipo_terrestre;
     }
 
     public boolean isPatas() {
