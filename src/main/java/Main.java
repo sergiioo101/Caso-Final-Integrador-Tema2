@@ -17,11 +17,11 @@ public class Main {
 
         // Importar hábitats ya creados
         habitats habitat1 = Gestion_habitats.habitats.getHabitat1();
-        habitats habitat2 = Gestion_habitats.habitats.getHabitat2();
+        //habitats habitat2 = Gestion_habitats.habitats.getHabitat2();
 
         // Agregar animales a los hábitats correspondientes
         habitat1.agregarAnimal(animal1);
-        habitat2.agregarAnimal(animal2);
+        //habitat2.agregarAnimal(animal2);
 
             System.out.println("¡Bienvenido al Zoológico!");
             System.out.println("Por favor, elija su rol:");
@@ -46,19 +46,24 @@ public class Main {
                 switch(opcionGuia) {
                     case 1:
                         guiaVisitante = new guia_reptiles();
-                        guiaVisitante.ofrecerGuia();
+                        habitats terrario = new terrario(30, 60, true);
+                        guiaVisitante.ofrecerGuia(terrario); // pass habitat1 as argument
+                        habitat1 = terrario;
                         break;
                     case 2:
                         guiaVisitante = new guia_aves();
-                        guiaVisitante.ofrecerGuia();
+                        habitats aviario = new habitats(25, 70, true);
+                        guiaVisitante.ofrecerGuia(aviario); // pass habitat1 as argument
                         break;
                     case 3:
                         guiaVisitante = new guia_acuaticos();
-                        guiaVisitante.ofrecerGuia();
+                        habitats acuario = new habitats(25, 70, true);
+                        guiaVisitante.ofrecerGuia(acuario); // pass habitat1 as argument
                         break;
                     case 4:
                         guiaVisitante = new guia_granja();
-                        guiaVisitante.ofrecerGuia();
+                        habitats granja = new habitats(25, 70, true);
+                        guiaVisitante.ofrecerGuia(granja); // pass habitat1 as argument
                         break;
                     default:
                         System.out.println("Opción no válida.");
