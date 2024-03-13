@@ -80,4 +80,10 @@ public class habitats {
     public int hashCode() {
         return super.hashCode();
     }
+
+    // Add this method
+    public static habitats getHabitat1() {
+        // Replace with the actual logic to get the habitat1 instance
+        return new terrario(25.0f, 60.0f, true);
+    }
 }

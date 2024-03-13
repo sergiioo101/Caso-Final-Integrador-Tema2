@@ -6,7 +6,6 @@ public class terrario extends habitats    {
 
     public terrario(float temperatura, float humedad, boolean limpieza) {
         super(temperatura, humedad, limpieza);
-        this.puede_caminar = puede_caminar;
     }
 
     @Override
@@ -37,13 +36,4 @@ public class terrario extends habitats    {
         // TODO Auto-generated method stub
         return super.hashCode();
     }
-
-    public boolean isPuede_caminar() {
-        return puede_caminar;
-    }
-
-    public void setPuede_caminar(boolean puede_caminar) {
-        this.puede_caminar = puede_caminar;
-    }
-
 }
